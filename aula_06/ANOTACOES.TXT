@@ -1,0 +1,4 @@
+V60 = No tailwind, os paddings vão até 20, então utilizamos os spaces para definir novos limites
+    
+    - Calculo de em para px é feito através de result = base * value, exemplo:
+      16 x 2(em) = 32px.

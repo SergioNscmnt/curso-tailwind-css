@@ -1,0 +1,20 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@layer components{
+    .container-exemplo{
+       @apply container bg-red-300 mx-auto p-4 my-4 text-red-900 border-red-600 border-2
+    }
+    .container-exercicio{
+        @apply container bg-green-400 md:bg-blue-400;
+    }
+    .container-box{
+        @apply container bg-purple-700 border-2 border-purple-900 m-4 border-b p-10;
+    }
+    .container-content{
+        @apply container bg-teal-400 border-2 border-teal-900 m-4 box-content p-10;
+    }
+}
