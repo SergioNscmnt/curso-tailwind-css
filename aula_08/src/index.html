@@ -1,13 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-    <h1 class="text-5xl bg-green-600">Funcionando?</h1>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SEÇÃO-08 Alinhamento de Itens</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <!-- alinhamento ao fim da página-->
+        <div class="flex p-2 bg-red-300 justify-end">
+            <div class="bg-red-600 p-4 m-4">1</div>
+            <div class="bg-red-600 p-4 m-4">2</div>
+            <div class="bg-red-600 p-4 m-4">3</div>
+            <div class="bg-red-600 p-4 m-4">4</div>
+        </div>
+        <!-- alinhamento ao centro da página-->
+        <div class="flex p-2 bg-blue-300 justify-center">
+            <div class="bg-blue-600 p-4 m-4">1</div>
+            <div class="bg-blue-600 p-4 m-4">2</div>
+            <div class="bg-blue-600 p-4 m-4">3</div>
+            <div class="bg-blue-600 p-4 m-4">4</div>
+        </div>
+        <!-- alinhamento ao início da página-->
+        <div class="flex p-2 bg-green-300">
+            <div class="bg-green-600 p-4 m-4">1</div>
+            <div class="bg-green-600 p-4 m-4">2</div>
+            <div class="bg-green-600 p-4 m-4">3</div>
+            <div class="bg-green-600 p-4 m-4">4</div>
+        </div>
+        <!--espaços iguais-->
+        <div class="flex p-2 bg-green-300 justify-between">
+            <div class="bg-green-600 p-4 m-4">1</div>
+            <div class="bg-green-600 p-4 m-4">2</div>
+            <div class="bg-green-600 p-4 m-4">3</div>
+            <div class="bg-green-600 p-4 m-4">4</div>
+        </div>
+        <!--espaços iguais, mas espaço também entre as bordas-->
+        <div class="flex p-2 bg-green-300 justify-around">
+            <div class="bg-green-600 p-4 m-4">1</div>
+            <div class="bg-green-600 p-4 m-4">2</div>
+            <div class="bg-green-600 p-4 m-4">3</div>
+            <div class="bg-green-600 p-4 m-4">4</div>
+        </div>
+
+        <h1 class="text-3xl bg-gray-300 text-center mt-3">EXERCÍCIO 10</h1>
+        <p class="bg-gray-500 text-center">Crie um container com seis itens, estes itens devem estar centralizados, alterne os itens entre cores</p>
+
+        <div class="flex p-2 justify-center">
+            <div class="bg-green-300 m-4 p-2">ITEM 1</div>
+            <div class="bg-green-600 m-4 p-2">ITEM 2</div>
+            <div class="bg-green-900 m-4 p-2">ITEM 3</div>
+            <div class="bg-green-300 m-4 p-2">ITEM 4</div>
+            <div class="bg-green-600 m-4 p-2">ITEM 5</div>
+            <div class="bg-green-900 m-4 p-2">ITEM 6</div>
+        </div>
+        
+        <div class="bg-purple-300 h-40 flex flex-wrap content-end">
+            <div class="bg-purple-600 h-10 p-2 mx-4">1</div>
+            <div class="bg-purple-600 h-10 p-2 mx-4">2</div>
+            <div class="bg-purple-600 h-10 p-2 mx-4">3</div>
+        </div>
+
+        <div class="bg-green-300 h-40 flex flex-wrap content-center">
+            <div class="bg-green-600 h-10 p-2 mx-4">1</div>
+            <div class="bg-green-600 h-10 p-2 mx-4">2</div>
+            <div class="bg-green-600 h-10 p-2 mx-4">3</div>
+        </div>
+
+        <div class="bg-red-300 h-40 flex flex-wrap content-between">
+            <div class="bg-red-600 h-10 p-2 w-1/3">1</div>
+            <div class="bg-red-600 h-10 p-2 w-1/3">2</div>
+            <div class="bg-red-600 h-10 p-2 w-1/3">3</div>
+            <div class="bg-red-600 h-10 p-2 w-1/3">4</div>
+            <div class="bg-red-600 h-10 p-2 w-1/3">5</div>
+            <div class="bg-red-600 h-10 p-2 w-1/3">6</div>
+        </div>
+
+        <div class="bg-teal-300 h-40 flex flex-wrap content-around">
+            <div class="bg-teal-600 h-10 p-2 w-1/3">1</div>
+            <div class="bg-teal-600 h-10 p-2 w-1/3">2</div>
+            <div class="bg-teal-600 h-10 p-2 w-1/3">3</div>
+            <div class="bg-teal-600 h-10 p-2 w-1/3">4</div>
+            <div class="bg-teal-600 h-10 p-2 w-1/3">5</div>
+            <div class="bg-teal-600 h-10 p-2 w-1/3">6</div>
+        </div>
+
+        <!-- alinhamento do item no início do eixo y -->
+        <div class="bg-purple-400 flex h-40 mt-3 items-start">
+            <div class="bg-purple-700 m-2 p-2">1</div>
+            <div class="bg-purple-700 m-2 p-2">2</div>
+            <div class="bg-purple-700 m-2 p-2">3</div>
+        </div>
+
+        <!-- Classe que faz o alongamento do item no eixo y -->
+        <div class="bg-purple-400 flex h-40 mt-3 items-strech">
+            <div class="bg-purple-700 m-2 p-2">1</div>
+            <div class="bg-purple-700 m-2 p-2">2</div>
+            <div class="bg-purple-700 m-2 p-2">3</div>
+        </div>
+
+        <!-- Alinhamento do eixo x(justify) e alinhamento do eixo y(items) ao centro da página -->
+        <div class="bg-purple-400 flex h-40 mt-3 items-center justify-center">
+            <div class="bg-purple-700 m-2 p-2">1</div>
+            <div class="bg-purple-700 m-2 p-2">2</div>
+            <div class="bg-purple-700 m-2 p-2">3</div>
+        </div>
+
+        <!-- Alinhamento ao final do eixo y, medido através do tamanho do grid em eixo y -->
+        <div class="bg-purple-400 flex h-40 mt-3 items-end">
+            <div class="bg-purple-700 m-2 p-2">1</div>
+            <div class="bg-purple-700 m-2 p-2">2</div>
+            <div class="bg-purple-700 m-2 p-2">3</div>
+        </div>
+
+        <p class="m-20">Espaçamento do eixo Y</p>
+        <p class="m-20">Espaçamento do eixo Y</p>
+        <p class="m-20">Espaçamento do eixo Y</p>
+        <p class="m-20">Espaçamento do eixo Y</p>
+        <p class="m-20">Espaçamento do eixo Y</p>
+    </body>
 </html>
