@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 13 - BORDAS </title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <p class="text-3xl bg-gray-600 italic font-bold text-center text-white">
+       AULA-13 - Bordas
+    </p>
+    <div class="text-2xl bg-gray-400 italic font-bold text-center">
+        Raio da Borda
+    </div>
+    <div class="bg-gray-300 mb-3">
+        <ul>
+            <li class="list-disc list-inside font-mono">Podemos adicionar raio as bordas com a classe rounded-*;</li>
+            <li class="list-disc list-inside font-mono">Onde * é o tamanho do raio;</li>
+            <li class="list-disc list-inside font-mono">Outras possibilidades são: elementos pílulas e circulares;</li>
+            <li class="list-disc list-inside font-mono">Para estes elementos vamos utilizar o rounded-full.</li>
+        </ul>
+    </div>
+    <div class="text-2xl bg-gray-400 italic font-bold text-center">
+        Tipos de borda
+    </div>
+    <div class="text-center">
+        <button class="m-4 p-2 bg-red-400 hover:bg-red-500 rounded font-bold text-white">Apagar</button>
+        <button class="m-4 p-2 bg-red-400 hover:bg-red-500 rounded-sm font-bold text-white">Apagar (menor)</button>
+        <button class="m-4 p-2 bg-red-400 hover:bg-red-500 rounded-3xl font-bold text-white">Apagar (maior)</button>
+    </div>
+    <div>
+        <span class="bg-green-400 w-20 h-20 block m-4 rounded-full">
+            Circular
+        </span>
+        <span class="bg-green-400 h-10 w-20 block m-4 rounded-full">
+            Pílula
+        </span>    
+    </div>
+    <div class="text-2xl bg-gray-400 italic font-bold text-center">
+        Largura e cor da borda
+    </div>
+    <div class="bg-gray-300 mb-3">
+        <ul>
+            <li class="list-disc list-inside font-mono">Podemos alterar a largura da borda com a classe border-*;</li>
+            <li class="list-disc list-inside font-mono">Onde * é o spacing que determina a largura;</li>
+            <li class="list-disc list-inside font-mono">Já a cor é adicionada por border-*;</li>
+            <li class="list-disc list-inside font-mono">Onde * neste caso é uma shade de cor.</li>
+        </ul>
+    </div>
+    <div>
+        <span class="bg-blue-400 text-white h-10 w-20 text-center block m-4 border-4 border-blue-500">
+            Botão
+        </span>
+        <span class="bg-blue-400 text-white h-10 w-20 text-center block m-4 border-4 border-blue-500 rounded-lg">
+            Botão
+        </span>    
+    </div>
+    <div class="text-2xl bg-gray-400 italic font-bold text-center">
+        Opacidade e estilo da borda
+    </div>
+    <div class="bg-gray-300 mb-3">
+        <ul>
+            <li class="list-disc list-inside font-mono">Podemos alterar a opacidade da borda com a classe border-opacity-*;</li>
+            <li class="list-disc list-inside font-mono">Onde * é a proporção de opacidade do elemento;</li>
+            <li class="list-disc list-inside font-mono">O estilo é alterado por border-*;</li>
+            <li class="list-disc list-inside font-mono">Onde * é o tipo de estilo da borda, algumas opções são: <b>solid, dashed, double, none.</b></li>
+        </ul>
+    </div>
+    <div class="text-center">
+        <span class="bg-purple-400 text-white text-center w-20 h-10 m-4 border-4 border-purple-800 border-opacity-25">
+            Botão
+        </span>
+        <span class="bg-purple-400 text-white text-center w-20 h-10 m-4 border-4 border-purple-800 border-opacity-75">
+            Botão
+        </span>
+        <span class="bg-purple-400 text-white text-center w-20 h-10 m-4 border-4 border-purple-800 border-opacity-100">
+            Botão
+        </span>
+        <span class="bg-purple-400 text-white text-center w-20 h-10 m-4 border-4 border-purple-800 border-opacity-100 border-double">
+            Border double
+        </span>
+        <span class="bg-purple-400 text-white text-center w-20 h-10 m-4 border-4 border-purple-800 border-opacity-100 border-dashed">
+            Border dashed
+        </span>
+    </div>
+    <div class="text-2xl bg-gray-400 italic font-bold text-center mt-3">
+        Divide
+    </div>
+    <div class="bg-gray-300 mb-3">
+        <ul>
+            <li class="list-disc list-inside font-mono">Divide é uma utility de borda que é utilizada nos containers para dividir elementos;</li>
+            <li class="list-disc list-inside font-mono">Utilizamos com divide-*;</li>
+            <li class="list-disc list-inside font-mono">Onde nesta mesma classe podemos escolher o eixo, cor, largura e opacidade do divide;</li>
+            <li class="list-disc list-inside font-mono">QUe no fim das contas é uma borda.</li>
+        </ul>
+    </div>
+    <p class="text-center bg-gray-300 font-bold mb-3"> Eixo X</p>
+    <div class="grid grid-cols-4 divide-x-4 divide-blue-900 divide-dotted">
+        <div class="text-center">1</div>
+        <div class="text-center">2</div>
+        <div class="text-center">3</div>
+        <div class="text-center">4</div>
+    </div>
+    <div class="grid grid-cols-4 divide-x-4 divide-blue-900 divide-dashed mt-3">
+        <div class="text-center">1</div>
+        <div class="text-center">2</div>
+        <div class="text-center">3</div>
+        <div class="text-center">4</div>
+    </div>
+    <div class="grid grid-cols-4 divide-x-4 divide-blue-900 divide-double mt-3">
+        <div class="text-center">1</div>
+        <div class="text-center">2</div>
+        <div class="text-center">3</div>
+        <div class="text-center">4</div>
+    </div>
+    <p class="text-center bg-gray-300 font-bold mt-3"> Eixo Y</p>
+    <div class="divide-y text-purple-500">
+        <p class="font-bold">
+            Testando divide no eixo y
+        </p>
+        <p class="font-bold">
+            Testando divide no eixo y
+        </p>
+        <p class="font-bold">
+            Testando divide no eixo y
+        </p>
+        <p class="font-bold">
+            Testando divide no eixo y
+        </p>
+    </div>
+    <div class="divide-y divide-dashed text-purple-500 mt-3">
+        <p class="font-bold">
+            Testando divide no eixo y
+        </p>
+        <p class="font-bold">
+            Testando divide no eixo y
+        </p>
+        <p class="font-bold">
+            Testando divide no eixo y
+        </p>
+        <p class="font-bold">
+            Testando divide no eixo y
+        </p>
+    </div>
+    <div class="text-2xl bg-gray-400 italic font-bold text-center mt-3">
+        Box Shadow
+    </div>
+    <div class="bg-gray-300 mb-3">
+        <ul>
+            <li class="list-disc list-inside font-mono">Com o box shadow podemos inserir um sombreamento no elemento;</li>
+            <li class="list-disc list-inside font-mono">A classe utilizada é shadow-*;</li>
+            <li class="list-disc list-inside font-mono">Onde * é a tonalidade do sombreamento que vamos inserir.</li>
+        </ul>
+    </div>
+
+    <div class="w-20 h-20 shadow-xs">
+        Sombra pequena
+    </div>
+    <div class="w-20 h-20 shadow">
+        Sombra média
+    </div>
+    <div class="w-20 h-20 shadow-2xl">
+        Sombra grande
+    </div>
+</body>
+</html>
