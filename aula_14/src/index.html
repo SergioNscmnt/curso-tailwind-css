@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AULA 14 - INTERATIVIDADE </title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <p class="text-center text-3xl bg-gray-500 italic font-bold"> Interatividade </p>
+    <p class="text-center text-2xl bg-gray-400 italic font-bold"> Aparência </p>
+    <div class="bg-gray-300">
+        <ul>
+            <li class="list-disc list-inside font-mono">Podemos remover a <b>aparência default</b> de alguns elementos com o Tailwind;</li>
+            <li class="list-disc list-inside font-mono">Utilizamos para isso, a classe <b>appearance-none;</b></li>
+        </ul>
+    </div>
+    <div class="m-4">
+        <select name="" id="" class="appearance-none">
+            <option value="">Teste</option>
+        </select>
+        <select name="" id="" class="ml-4">
+            <option value="">Teste</option>
+        </select>
+    </div>
+    <p class="text-center text-2xl bg-gray-400 italic font-bold mt-3"> Cursor do Mouse </p>
+    <div class="bg-gray-300">
+        <ul>
+            <li class="list-disc list-inside font-mono">Podemos alterar o <b>cursor</b> também com Tailwind;</li>
+            <li class="list-disc list-inside font-mono">Vamos utilizar a classe cursor-*;</li>
+            <li class="list-disc list-inside font-mono">Onde * é o <b>tipo de cursor</b>(ponteiro) que queremos inserir, como por exemplo: pointer;</li>
+        </ul>
+    </div>
+    <div class="h-20 bg-blue-300 text-center cursor-pointer">
+        Cursor pointer
+    </div>
+    <div class="h-20 bg-blue-300 text-center cursor-wait mt-3">
+        Cursor wait
+    </div>
+    <div class="h-20 bg-blue-300 text-center cursor-not-allowed mt-3">
+        Cursor not allowed
+    </div>
+    <div class="h-20 bg-blue-300 text-center cursor-text mt-3">
+        Cursor text
+    </div>
+    <p class="text-center text-2xl bg-gray-400 italic font-bold mt-3"> Removendo o outline </p>
+    <div class="bg-gray-300">
+        <ul>
+            <li class="list-disc list-inside font-mono">O outline é <b>uma borda</b> que é inserida em alguns navegadores quando acessamos um input;</li>
+            <li class="list-disc list-inside font-mono">Para remover este recurso utilizamos a classe: <b>outline-none</b>;</li>          
+        </ul>
+    </div>
+    <div class="mt-3">
+        <input type="text" placeholder="Exemplo sem borda" class="outline-none">
+        <input type="text" placeholder="Exemplo default">
+    </div>
+    <p class="text-center text-2xl bg-gray-400 italic font-bold mt-3"> Removendo pointer events </p>
+    <div class="bg-gray-300">
+        <ul>
+            <li class="list-disc list-inside font-mono">Podemos remover os <b>eventos de clique</b> do HTML;</li>
+            <li class="list-disc list-inside font-mono">A classe que realizará este efeito é: <b>pointer-events-none</b>;</li>
+            <li class="list-disc list-inside font-mono">Caso precise voltar o evento: <b>pointer-events-auto</b>.</li>           
+        </ul>
+    </div>
+    <div class="m-4 bg-blue-400 p-4">
+        <select class="pointer-events-none">
+            <option value="">Teste Pointers</option>
+        </select>
+        <select class="ml-4">
+            <option value="">Teste Pointers</option>
+        </select>
+        <div class="m-4">
+            <p class="font-bold underline"> text-area</p>
+            <textarea name="" id="" rows= '20' class="h-20 pointer-events-none"></textarea>
+            <textarea name="" id="" rows= '20' class="h-20 pointer-events-none"></textarea>
+        </div>
+    </div>
+    <p class="text-center text-2xl bg-gray-400 italic font-bold mt-3"> Modificando o resize </p>
+    <div class="bg-gray-300">
+        <ul>
+            <li class="list-disc list-inside font-mono">Resize é uma <b>propriedade do textarea</b>, que permite redimensionar o elemento;</li>
+            <li class="list-disc list-inside font-mono">Podemos controlar como ele é exibido com <b>resize-*</b>;</li>
+            <li class="list-disc list-inside font-mono">Onde * é o <b>tipo de resize</b> que vamos adicionar ao elemento.</li>           
+        </ul>
+    </div>
+    <div class="m-4 bg-blue-400 p-4">
+        <div class="m-4">
+            <p class="font-bold underline"> text-area</p>
+            <textarea name="" id="" rows= '20' class="h-20"></textarea>
+            <textarea name="" id="" rows= '20' class="h-20 resize-none"></textarea>
+            <textarea name="" id="" rows= '20' class="h-20 resize-x"></textarea>
+            <textarea name="" id="" rows= '20' class="h-20 resize"></textarea>
+        </div>
+    </div>
+    <p class="text-center text-2xl bg-gray-400 italic font-bold mt-3"> Removendo seleção </p>
+    <div class="bg-gray-300">
+        <ul>
+            <li class="list-disc list-inside font-mono">Podemos também <b>remover a seleção de um elemento</b> pelo usuário;</li>
+            <li class="list-disc list-inside font-mono">A classe utilizada é <b>select-*</b>;</li>
+            <li class="list-disc list-inside font-mono">Onde * é o <b>tipo de seleção</b>permitida sobre o elemento alvo.</li>           
+        </ul>
+    </div>
+    <div class="m-4 bg-blue-300 p-4">
+        <p class="select-none">Este parágrafo não pode ser selecionado</p>
+        <p class="select-auto">Este parágrafo pode ser selecionado</p>
+    </div>
+    <p class="text-center text-2xl bg-gray-400 italic font-bold mt-3"> End Session </p>
+</body>
+</html>
